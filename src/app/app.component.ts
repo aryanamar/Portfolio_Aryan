@@ -230,7 +230,7 @@ type ProjectCard = {
             <h2 class="mt-3 text-3xl font-bold text-white md:text-4xl">Let’s build something memorable.</h2>
             <p class="mt-4 max-w-2xl text-slate-300">
               For freelance work, internships, collaborations, or full-time opportunities, feel free to reach out.
-              I’d x love to contribute to teams building thoughtful and modern digital products.
+              I’d love to contribute to teams building thoughtful and modern digital products.
             </p>
           </div>
 
