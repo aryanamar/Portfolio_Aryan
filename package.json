@@ -6,11 +6,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh-pages": "ng build --base-href /Portfolio_Aryan/",
     "watch": "ng build --watch --configuration development"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aryanamar/Backend_NodeJS.git"
+    "url": "git+https://github.com/aryanamar/Portfolio_Aryan.git"
   },
   "dependencies": {
     "@angular/animations": "^18.2.0",
