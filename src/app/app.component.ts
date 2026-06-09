@@ -5,6 +5,7 @@ type Skill = {
   name: string;
   icon: string;
   color: string;
+  category: string;
 };
 
 type ProjectCard = {
@@ -46,33 +47,34 @@ type ProjectCard = {
           <div class="space-y-8">
             <div class="inline-flex items-center gap-2 rounded-full border border-secondary/30 bg-secondary/10 px-4 py-2 text-sm text-secondary">
               <span class="h-2 w-2 rounded-full bg-secondary"></span>
-              Open to exciting product and frontend roles
+              Open to exciting Product and Program Management roles working at the intersection of AI and Engineering. Let’s connect!
             </div>
 
             <div class="space-y-5">
-              <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Portfolio</p>
-              <h1 class="max-w-3xl text-5xl font-black leading-tight text-white md:text-6xl">
-                Aryan <span class="text-transparent bg-gradient-to-r from-secondary via-sky-300 to-fuchsia-400 bg-clip-text">builds</span>
-                polished digital experiences.
+              <h1 class="max-w-3xl text-5xl font-black leading-tight text-white md:text-4xl">
+                Engineering x <span class="text-transparent bg-gradient-to-r from-secondary via-sky-300 to-fuchsia-400 bg-clip-text">AI</span>
+                x Product
               </h1>
               <p class="max-w-2xl text-lg leading-8 text-slate-300">
-                I design and build elegant, responsive, and user-focused interfaces with a product mindset.
-                I enjoy turning ambitious ideas into clean, scalable web experiences with strong visual storytelling.
+                Senior Software Engineer exploring the intersection of AI, Analytics, Product Thinking, and Engineering.
+                Passionate about turning emerging AI capabilities into scalable business solutions.
               </p>
             </div>
 
             <div class="grid gap-4 sm:grid-cols-3">
               <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
-                <p class="text-3xl font-bold text-white">12+</p>
-                <p class="mt-2 text-sm text-slate-400">Concepts, demos, and UI builds shipped.</p>
+                <p class="text-3xl font-bold text-white">3+</p>
+                <p class="mt-2 text-sm text-slate-400">Years building software and solving business problems.</p>
               </div>
+
               <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
-                <p class="text-3xl font-bold text-white">UI/UX</p>
-                <p class="mt-2 text-sm text-slate-400">Strong focus on visual hierarchy and delightful interactions.</p>
+                <p class="text-3xl font-bold text-white">40+</p>
+                <p class="mt-2 text-sm text-slate-400">Users onboarded and supported through AI adoption initiatives.</p>
               </div>
+
               <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
-                <p class="text-3xl font-bold text-white">Fast</p>
-                <p class="mt-2 text-sm text-slate-400">Responsive layouts with reusable component-driven thinking.</p>
+                <p class="text-3xl font-bold text-white">16+</p>
+                <p class="mt-2 text-sm text-slate-400">Hours saved weekly through automation and analytics solutions.</p>
               </div>
             </div>
 
@@ -92,19 +94,12 @@ type ProjectCard = {
             </div>
           </div>
 
-          <div class="relative">
-            <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-accent/40 via-transparent to-secondary/30 blur-2xl"></div>
-            <div
-              class="relative mx-auto flex aspect-[4/5] max-w-md items-center justify-center rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-800 via-slate-900 to-black p-6"
-            >
-              <div class="flex h-full w-full flex-col items-center justify-center rounded-[1.5rem] border border-dashed border-slate-500/50 bg-white/5 text-center">
-                <div class="mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-white/10 text-4xl">📸</div>
-                <p class="text-xl font-semibold text-white">Photo Placeholder</p>
-                <p class="mt-3 max-w-xs text-sm leading-6 text-slate-400">
-                  Replace this with your portrait, a studio shot, or a lifestyle image for a premium personal-brand feel.
-                </p>
-              </div>
-            </div>
+          <div class="relative flex h-full items-center justify-center">
+            <img
+              src="assets/Profile.png"
+              alt="Profile Picture"
+              class="h-64 w-64 md:h-80 md:w-80 rounded-full object-cover shadow-2xl"
+            />
           </div>
         </section>
 
@@ -155,10 +150,9 @@ type ProjectCard = {
               <h2 class="mt-4 text-3xl font-bold text-white md:text-4xl">Why you should hire me</h2>
             </div>
             <p class="text-lg leading-8 text-slate-200">
-              I combine clean engineering practices with strong design instincts, which means I can build interfaces that
-              not only work reliably but also feel premium and intentional. I care about performance, accessibility,
-              consistency, and product clarity. Whether the task is creating a landing page, a dashboard, or a polished
-              portfolio experience, I bring ownership, thoughtful execution, and a strong eye for detail from idea to delivery.
+              I believe the best solutions come from first-principles thinking—breaking problems down to their fundamentals before deciding what to build.
+              My experience spans software engineering, analytics, AI adoption, and product initiatives, giving me the ability to understand both technical systems and business needs.
+              Whether it's rolling out AI capabilities, automating workflows, analyzing data, or building software, I enjoy turning ambiguity into structured execution and measurable outcomes.
             </p>
           </div>
         </section>
@@ -219,7 +213,9 @@ type ProjectCard = {
               </div>
               <div>
                 <p class="font-semibold text-white">{{ skill.name }}</p>
-                <p class="text-sm text-slate-400">Modern workflow</p>
+                <p class="text-sm text-slate-400">
+                  {{ skill.category }}
+                </p>
               </div>
             </div>
           </div>
@@ -239,10 +235,10 @@ type ProjectCard = {
           </div>
 
           <div class="space-y-4 rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-6">
-            <a class="block text-lg font-semibold text-white" href="mailto:aryan&#64;example.com">aryan&#64;example.com</a>
+            <a class="block text-lg font-semibold text-white" href="mailto:anshuamar8&#64;gmail.com">anshuamar8&#64;gmail.com</a>
             <a
               class="block text-sm text-secondary underline-offset-4 transition hover:underline"
-              href="https://www.linkedin.com/in/aryan"
+              href="https://www.linkedin.com/in/aryan-amarnani "
               target="_blank"
               rel="noreferrer"
             >
@@ -258,60 +254,133 @@ type ProjectCard = {
 export class AppComponent {
   readonly currentProjects: ProjectCard[] = [
     {
-      title: 'AI Portfolio Assistant',
-      description: 'An interactive portfolio companion that helps recruiters explore work, skills, and achievements with smart conversational flows.',
-      stack: ['Angular', 'TailwindCSS', 'AI UX'],
+      title: 'AI Adoption Analytics Platform',
+      description:
+      'Building dashboards to monitor GenAI adoption, token utilization, active users, productivity gains, and ROI metrics. Focused on helping organizations make data-driven decisions around AI governance and adoption.',
+      stack: ['Power BI', 'Analytics', 'AI Adoption', 'KPIs'],
       link: '#'
     },
     {
-      title: 'Creator Analytics Dashboard',
-      description: 'A visually rich dashboard concept for monitoring growth, engagement trends, and campaign opportunities in one place.',
-      stack: ['Data Visualization', 'Product Design', 'Frontend'],
+      title: 'Multi-Agent Workflow Orchestrator',
+      description:
+      'Designing a multi-agent system where specialized AI agents collaborate to perform research, planning, content generation, validation, and execution tasks. Exploring agent orchestration, memory management, and workflow automation.',
+      stack: ['AI Agents', 'LLMs', 'Automation', 'Agentic Workflows'],
       link: '#'
     },
     {
-      title: 'Modern Hiring Platform',
-      description: 'A premium web experience focused on simplifying applications, talent discovery, and candidate storytelling.',
-      stack: ['UI Systems', 'Responsive Design', 'Angular'],
+      title: 'Enterprise AI Knowledge Assistant',
+      description:
+      'Developing an AI-powered knowledge assistant that enables teams to search documentation, retrieve context-aware answers, and accelerate decision-making through conversational interfaces.',
+      stack: ['RAG', 'LLMs', 'Knowledge Management', 'AI UX'],
       link: '#'
     }
   ];
 
   readonly deliveredProjects: ProjectCard[] = [
     {
-      title: 'E-commerce Brand Showcase',
-      description: 'Designed a conversion-focused storefront experience with elegant product presentation, smooth navigation, and trust-building layouts.',
-      stack: ['Landing Pages', 'UX Writing', 'Performance'],
+      title: 'ChatGPT Enterprise Adoption Program',
+      description:
+      'Led AI adoption initiatives within the ICS organization by identifying use cases, creating prompt engineering resources, establishing governance practices, and tracking adoption and ROI metrics.',
+      stack: ['AI Adoption', 'Prompt Engineering', 'Analytics', 'Program Management'],
       link: '#'
     },
     {
-      title: 'SaaS Product Website',
-      description: 'Built a clean marketing website with feature storytelling, modular content sections, and a strong visual rhythm across pages.',
-      stack: ['Web Design', 'Frontend Architecture', 'Accessibility'],
+      title: 'Legacy Platform Modernization',
+      description:
+      'Led frontend modernization efforts for a legacy platform, improving maintainability, user experience, and reducing feature delivery timelines by 60%.',
+      stack: ['Angular', 'TypeScript', 'Architecture', 'Frontend'],
       link: '#'
     },
     {
-      title: 'Personal Branding Site',
-      description: 'Crafted a minimal yet expressive digital presence highlighting expertise, selected work, and clear ways to connect professionally.',
-      stack: ['Branding', 'Responsive UI', 'Content Strategy'],
+      title: 'One-Click Object Repository Generator',
+      description:
+      'Built an automation tool that converts application screenshots into structured JSON object repositories with classified UI elements and location centroids.',
+      stack: ['Computer Vision', 'Automation', 'JSON', 'Testing'],
       link: '#'
     },
     {
-      title: 'Student Community Portal',
-      description: 'Created a platform concept for events, collaboration, and resource sharing with intuitive navigation and scalable layout patterns.',
-      stack: ['User Research', 'Component Design', 'Frontend'],
+      title: 'Smart LPG Monitoring System',
+      description:
+      'Developed an IoT-based LPG leak detection and automated cylinder reordering solution using Arduino, ESP8266, sensors, and cloud notifications.',
+      stack: ['IoT', 'Arduino', 'ESP8266', 'Cloud'],
       link: '#'
     }
   ];
 
-  readonly skills: Skill[] = [
-    { name: 'Angular', icon: 'A', color: 'bg-red-500/20 text-red-300' },
-    { name: 'TailwindCSS', icon: 'T', color: 'bg-cyan-500/20 text-cyan-300' },
-    { name: 'TypeScript', icon: 'TS', color: 'bg-blue-500/20 text-blue-300' },
-    { name: 'JavaScript', icon: 'JS', color: 'bg-yellow-500/20 text-yellow-300' },
-    { name: 'HTML5', icon: 'H', color: 'bg-orange-500/20 text-orange-300' },
-    { name: 'CSS3', icon: 'C', color: 'bg-sky-500/20 text-sky-300' },
-    { name: 'Figma', icon: 'F', color: 'bg-pink-500/20 text-pink-300' },
-    { name: 'Git', icon: 'G', color: 'bg-emerald-500/20 text-emerald-300' }
-  ];
+
+readonly skills: Skill[] = [
+  {
+    name: 'AI Agents',
+    icon: '🤖',
+    color: 'bg-violet-500/20 text-violet-300',
+    category: 'AI & Automation'
+  },
+  {
+    name: 'Prompt Engineering',
+    icon: '✨',
+    color: 'bg-fuchsia-500/20 text-fuchsia-300',
+    category: 'AI & Automation'
+  },
+  {
+    name: 'Workflow Automation',
+    icon: '⚡',
+    color: 'bg-orange-500/20 text-orange-300',
+    category: 'AI & Automation'
+  },
+  {
+    name: 'Power BI',
+    icon: '📊',
+    color: 'bg-yellow-500/20 text-yellow-300',
+    category: 'Analytics'
+  },
+  {
+    name: 'SQL',
+    icon: '🗄️',
+    color: 'bg-blue-500/20 text-blue-300',
+    category: 'Analytics'
+  },
+  {
+    name: 'Analytics',
+    icon: '📈',
+    color: 'bg-emerald-500/20 text-emerald-300',
+    category: 'Analytics'
+  },
+  {
+    name: 'Python',
+    icon: '🐍',
+    color: 'bg-green-500/20 text-green-300',
+    category: 'Engineering'
+  },
+  {
+    name: 'Angular',
+    icon: 'A',
+    color: 'bg-red-500/20 text-red-300',
+    category: 'Engineering'
+  },
+  {
+    name: 'TypeScript',
+    icon: 'TS',
+    color: 'bg-sky-500/20 text-sky-300',
+    category: 'Engineering'
+  },
+  {
+    name: 'REST APIs',
+    icon: '🔗',
+    color: 'bg-cyan-500/20 text-cyan-300',
+    category: 'Engineering'
+  },
+  {
+    name: 'Stakeholder Management',
+    icon: '🤝',
+    color: 'bg-pink-500/20 text-pink-300',
+    category: 'Product & Leadership'
+  },
+  {
+    name: 'Product Thinking',
+    icon: '🎯',
+    color: 'bg-indigo-500/20 text-indigo-300',
+    category: 'Product & Leadership'
+  }
+];
+
 }
