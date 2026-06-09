@@ -32,6 +32,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Portfolio_Aryan/",
               "budgets": [
                 {
                   "type": "initial",
@@ -68,5 +69,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
